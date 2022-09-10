@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABEL JQUERY</title>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+ $(document).ready(function(){ $('.nim').click(function(){ 
+  let text = $(this).text();
+  alert(`Ganti Nim? "${text}"`);
+   if(text!='Delete'){ 
+    let text2 = prompt('Ubah Menjadi:', text);
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) })
+
+ $(document).ready(function(){ $('.nama').click(function(){ 
+  let text = $(this).text();
+  alert(`Ganti Nama? "${text}"`);
+   if(text!='Delete'){ 
+    let text2 = prompt('Ubah Menjadi:', text);
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
+
+$(document).ready(function(){ $('.kota').click(function(){ 
+  let text = $(this).text();
+  alert(`Ganti Kota? "${text}"`);
+   if(text!='Delete'){ 
+    let text2 = prompt('Ubah Menjadi:', text);
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) })
+
+$(document).ready(function(){ $('.hapus').click(function(){ 
+  let text = $(this).text();
+  alert(`Belum Bisa Dihapus`);
+   if(text!=''){ 
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) })
+</script>
+
+    <style type="text/css">
+
+        
+
+        h1 {
+            margin-top: 130px;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+            cursor: pointer;
+            
+            
+        }
+        h1:hover{
+            font-size: 45px;
+            color: rgb(186, 216, 178);
+        }
+        
+        .tabel1 {
+            font-family: serif;
+            color: rgb(12, 0, 0);
+            width: 80%;
+            object-fit:contain;
+            border: 1px solid #ffffff;
+            margin-top: 50px;
+            padding: 20px; 
+            box-shadow: 7px 7px 15px 1px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            border-radius: 20px;
+
+        }
+
+        .tabel1 tr th {
+            color: rgb(15, 15, 15);
+            font-weight: normal;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .tabel1, th, td {
+            padding: 8px 20px;
+            width: 20px 20px 20px;
+            text-align: center;
+        }
+        body{
+	    background: rgb(113, 133, 122);
+	    color: rgb(255, 2, 2);
+        }
+
+        td{
+            cursor: pointer;
+        }
+
+        td:hover{
+            transform: translate(20px);
+            transition: all 0.3s ease-in-out 0.15s;
+        }
+
+        </style
+
+
+    </head>
+<body>
+    <center>
+    <h1>TOP 5 BEST</h1>
+    <table class="tabel1">
+    </tr>
+        <th class="NIM">NIM</th>
+        <th class="Nama">Nama</th>
+        <th class="Alamat">Alamat</th>
+        <th class="Aksi">Aksi</th>
+        </tr>
+    <tr>
+        <td class="nim">41215964</td>
+        <td class="nama">Rio Harsadinoto</td>
+        <td class="kota">Banten</td>
+        <td class="hapus">Hapus</td>
+
+    </tr>
+
+    <tr>
+        <td class="nim">41215314</td>
+        <td class="nama">Syaiful Imanudin</td>
+        <td class="kota">Cicaheum</td>
+        <td class="hapus">Hapus</td>
+
+    </tr>
+
+    <tr>
+        <td class="nim">41215296</td>
+        <td class="nama">Bima Anugrah</td>
+        <td class="kota">Cirebon</td>
+        <td class="hapus">Hapus</td>
+
+    </tr>
+
+    <tr>
+        <td class="nim">41215634</td>
+        <td class="nama">Ahmad Syaeful Ma'arief</td>
+        <td class="kota">Cirebon</td>
+        <td class="hapus">Hapus</td>
+
+    </tr>
+
+    <tr>
+        <td class="nim">41215905</td>
+        <td class="nama">Guruh Yoga Lianda Ibrahim</td>
+        <td class="kota">Cirebon</td>
+        <td class="hapus">Hapus</td>
+
+    </tr>
